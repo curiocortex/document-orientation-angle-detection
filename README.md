@@ -17,7 +17,12 @@ Data preparation in this verison is flawless. We have a training generator that 
 To train a model first install the required packages from the terminal, (python 3.7)
 
 ```
+
+$ sudo apt install ffmpeg libsm6 libxext6  -f -y
 $ pip install -r requirements.txt
+$ pip install opencv-python
+$ pip install urllib3==1.26.6
+
 ```
 
 Then run the following command in the terminal,
