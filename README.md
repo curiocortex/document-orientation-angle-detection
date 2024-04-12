@@ -14,7 +14,7 @@ Image Orientation Angle Detection Model (Deep-OAD) is a deep learning model to p
 Data preparation in this verison is flawless. We have a training generator that dynamically rotates the images to random angles and trains model. For that, the experimenter needs to put the training images under the [training data](./data/train/) directory. For validation and test, there is a separate [validation and test](./data/validation-test/) directory. As we want to validate or test against same set of rotates images, there is an additional file [validation-test.csv](./data/validation-test.csv) that contains whether an image is under validation or test set and it's label. **Please make sure all the images under [training data](./data/train/) and [validation and test](./data/validation-test/) directory are correctly oriented. Our generator will take care of the rotation and produce training, validation and test losses and metrics accordingly. Along with that also make sure that the angles under label column in [validation-test.csv](./data/validation-test.csv) are between 0 to 359°.**
 
 ## Model Training
-To train a model first install the required packages from the terminal,
+To train a model first install the required packages from the terminal, (python 3.7)
 
 ```
 $ pip install -r requirements.txt
